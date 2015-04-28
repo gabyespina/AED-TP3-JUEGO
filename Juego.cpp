@@ -9,12 +9,11 @@
 
 using namespace std;
 
-int preguntas(int);
-
 int main(int argc, char *argv[])
 {   
     int cont = 0, pmate = 0, pgeo = 0, phist = 0;
     int tipo,tema = 0,porc = 0;
+    
     cout<<endl<<" |||  BIENVENIDO AL MEJOR JUEGO DE PREGUNTAS  |||"<<endl<<endl;
     
     do{
