@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
             tema = tema + 1;
             break;
        case 4 :
-            pgeo = 0; phist = 0; pmate = 0; 
+            pgeo = 0; phist = 0; pmate = 0; tema = 0 ; 
             break;
        case 5 :
             cout<<endl<<endl<<"  El juego se trata de contestar preguntas de diversos temas,"<<endl
