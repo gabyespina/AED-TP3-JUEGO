@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 {   
     int cont = 0, pmate = 0, pgeo = 0, phist = 0;
     int tipo,tema = 0,porc = 0;
-    
     cout<<endl<<" |||  BIENVENIDO AL MEJOR JUEGO DE PREGUNTAS  |||"<<endl<<endl;
     
     do{
@@ -106,7 +105,7 @@ int main(int argc, char *argv[])
             tema = tema + 1;
             break;
        case 4 :
-            pgeo = 0; phist = 0; pmate = 0; tema = 0 ; 
+            pgeo = 0; phist = 0; pmate = 0; tema = 0;
             break;
        case 5 :
             cout<<endl<<endl<<"  El juego se trata de contestar preguntas de diversos temas,"<<endl
@@ -121,7 +120,6 @@ int main(int argc, char *argv[])
             cout<< " PUNTAJE TOTAL:  "<< (pmate+phist+pgeo)<<endl<<endl;
             porc = ((pmate+phist+pgeo) * 100)/90;
             cout<< " ACERTO EL " << porc << " % " << " DE LAS PREGUNTAS"<<endl<<endl;
-            cout<<endl<<" FIN DEL JUEGO, HASTA LUEGO"<<endl<<endl;
             break;
        default :
                cout<<endl<<"Item Incorrecto"<<endl<<endl ;
@@ -135,7 +133,7 @@ int main(int argc, char *argv[])
           cout<< " ACERTO EL " << porc << " % " << " DE LAS PREGUNTAS"<<endl<<endl;
           cout<< " QUIERE VOLVER A JUGAR?   s/n"<< endl<<endl<<"  ";
           string resp; cin>>resp;
-          if (resp == "no"){
+          if (resp == "n" or resp == "N"){
              tipo = 6;
          }else{
                pgeo = 0; phist = 0; pmate = 0; 
@@ -143,5 +141,6 @@ int main(int argc, char *argv[])
       }
    }
    }while (tipo != 6);
+   cout<<endl<<" FIN DEL JUEGO, HASTA LUEGO"<<endl<<endl;
     system("PAUSE");
 }
